@@ -11,7 +11,7 @@ function main(){
 
     var g = svg.append("g").attr("transform", "translate("+100+","+10+")");
 
-    d3.csv("../data/PUE.csv").then(function(data){
+    d3.csv("./data/PUE.csv").then(function(data){
 
         xScale.domain(data.map(function(d){return d.ID;}))
         yScale.domain([0,d3.max(data, function(d){return d.PUE})])
