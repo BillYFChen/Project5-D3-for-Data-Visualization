@@ -31,4 +31,4 @@ function main(){
 
 }
 
-// alert("Hello!")
+alert("Hello!")
