@@ -1,4 +1,6 @@
 function main(){
+    alert("Hello!")
+
     d3.select("p").style("color","firebrick")
 
     var svg = d3.select("svg"),
@@ -30,5 +32,3 @@ function main(){
     });
 
 }
-
-alert("Hello!")
