@@ -1,10 +1,6 @@
-// alert("Hello!")
-
-function main() {
-    d3.select("p").style("color","firebrick")
-}
-
 function main(){
+    d3.select("p").style("color","firebrick")
+
     var svg = d3.select("svg"),
     margin = 200,
     width = svg.attr("width") - margin,
@@ -13,7 +9,7 @@ function main(){
     var xScale = d3.scaleBand().range([0,width]).padding(0.8),
         yScale = d3.scaleLinear().range([height,0]);
 
-    var g = svg.append("g").attr("transform", "translate("+100+","+100+")");
+    var g = svg.append("g").attr("transform", "translate("+100+","+10+")");
 
     d3.csv("../data/PUE.csv").then(function(data){
 
@@ -34,3 +30,5 @@ function main(){
     });
 
 }
+
+// alert("Hello!")
