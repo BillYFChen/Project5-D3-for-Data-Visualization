@@ -3,6 +3,7 @@
 function main(){
     alert("Hello!")
 
+    d3.select("h1").style("color","green")
     d3.select("p").style("color","firebrick")
 
     var svg = d3.select("svg"),
